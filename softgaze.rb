@@ -5,21 +5,21 @@
 class Softgaze < Formula
   desc "Calm window to stay with one Claude Code session while it works"
   homepage "https://github.com/fabioconcina/softgaze"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/fabioconcina/softgaze/releases/download/v0.1.0/softgaze-darwin-amd64.tar.gz"
-      sha256 "6f65c51636ae4eecd2fdc5b86b163ef5139c6ae2493f29ed38d0c19856a3f9a6"
+      url "https://github.com/fabioconcina/softgaze/releases/download/v0.2.0/softgaze-darwin-amd64.tar.gz"
+      sha256 "37f1e199586ec9579fb3d1f07f8caad1e0d897acb09ba360b7f551cfa10f58ec"
 
       define_method(:install) do
         bin.install "softgaze"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/fabioconcina/softgaze/releases/download/v0.1.0/softgaze-darwin-arm64.tar.gz"
-      sha256 "599f6e89a1d72cccb063306e174e295a0074e441ad061ae82fbc6c59030ac7fe"
+      url "https://github.com/fabioconcina/softgaze/releases/download/v0.2.0/softgaze-darwin-arm64.tar.gz"
+      sha256 "4041bb51e55acaffd45c2e80994123876aee50098f0ff830b054d9c1b583e806"
 
       define_method(:install) do
         bin.install "softgaze"
@@ -29,15 +29,15 @@ class Softgaze < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fabioconcina/softgaze/releases/download/v0.1.0/softgaze-linux-amd64.tar.gz"
-      sha256 "afddf5a218147fa898366fb4265a70e320bfd933b0a613f9eea386313c30b1f0"
+      url "https://github.com/fabioconcina/softgaze/releases/download/v0.2.0/softgaze-linux-amd64.tar.gz"
+      sha256 "b631fa450229d06c59f3eeb35efc414a123f25b3db09496ec2e6ed3ba251881c"
       define_method(:install) do
         bin.install "softgaze"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fabioconcina/softgaze/releases/download/v0.1.0/softgaze-linux-arm64.tar.gz"
-      sha256 "d39c956b9883cf4adc9de8d0800cff3a329bd63eec1221d15911ba4765997124"
+      url "https://github.com/fabioconcina/softgaze/releases/download/v0.2.0/softgaze-linux-arm64.tar.gz"
+      sha256 "f668100d5ab221a175f0a3f08d8c729a677a125a12a1695a7ba5200c49cb287a"
       define_method(:install) do
         bin.install "softgaze"
       end
